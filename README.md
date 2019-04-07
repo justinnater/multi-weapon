@@ -2,7 +2,8 @@
 Allows players to switch through weapons with the same weapon slot instead of loosing their previous weapon with the same weapon slot.
 
 # How to install
-You have to include the file in your script and you're good to go!
+Place the multi_weapon.inc inside your include folder. ('pawno\include')
+You have to include the file in your script and you're good to go! ('#include <multi_weapon>')
 No changes are required in your script for this to work.
 
 # How to switch weapon
