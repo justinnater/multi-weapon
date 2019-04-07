@@ -182,6 +182,7 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 hook OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
 {
+	pWeps[playerid][wepAmmo][weaponid] = GetPlayerAmmo(playerid)-1;
 	if(GetPlayerAmmo(playerid) == 1)
 	{
 		SwitchPlayerWeapon(playerid);
