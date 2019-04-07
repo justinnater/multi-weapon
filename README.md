@@ -9,7 +9,7 @@ No changes are required in your script for this to work.
 # How to switch weapon
 By default you can switch weapons with the 'ALT' key.
 Incase you feel like changing this: 
--> open 'multi_thread.inc'
+-> open 'multi_weapon.inc'
 -> go to line '9' (#define MULTI_WEAPON_SWITCH_KEY KEY_WALK)
 -> change 'KEY_WALK' to any SAMP KEY you like.
 (info about keys: https://wiki.sa-mp.com/wiki/Keys)
