@@ -17,6 +17,19 @@ enum
 
 new pWeps[MAX_PLAYERS][e_WepInfo];
 
+stock GetPlayerWeaponDataEx(playerid, weaponid, &mwep, &mammo)
+{
+	mwep = pWeps[playerid][wepId][weaponid];
+	mammo = pWeps[playerid][wepAmmo][weaponid];
+}
+
+#if defined _ALS_GetPlayerWeaponData
+  #undef GetPlayerWeaponData
+#else
+#define _ALS_GetPlayerWeaponData
+#endif
+#define GetPlayerWeaponData GetPlayerWeaponDataEx 
+
 stock ResetPlayerWeaponsEx(playerid)
 {
 	for( new i=1; i < 47; i++ )
